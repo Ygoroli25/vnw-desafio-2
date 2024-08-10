@@ -1,1 +1,92 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0px auto;
+  padding: 60px 20px 96px 20px;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(4, auto);
+  grid-template-areas: "img-perfile info info info" "favorite-movies favorite-movies favorite-songs favorite-songs";
+}
+
+picture {
+  display: flex;
+  align-items: center;
+}
+
+.img-profile {
+  grid-area: img-profile;
+  width: 250px;
+  border-radius: 50%;
+}
+
+.info {
+  grid-area: info;
+  align-self: center;
+}
+.info h1 {
+  font-size: 3rem;
+  margin-bottom: 1.25rem;
+  color: #d86700;
+}
+.info p {
+  font-size: 1.25rem;
+  color: #434343;
+}
+.info p + p {
+  margin-top: 0.5rem;
+}
+.info a {
+  display: inline-block;
+  margin-top: 1.75rem;
+  font-weight: 600;
+  color: #010101;
+}
+
+.footer {
+  background-color: #d86700;
+  padding: 1.75rem;
+}
+.footer p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.125rem;
+}
+.footer a {
+  color: #ffffff;
+}
+
+.my-favorites {
+  background-color: #d86700;
+  border-radius: 0.5rem;
+  padding: 2rem 1rem;
+  color: #ffffff;
+}
+.my-favorites h2 {
+  font-size: 1.75rem;
+}
+.my-favorites ol {
+  list-style: none;
+}
+.my-favorites li {
+  padding: 0.25rem 0.5rem;
+  margin-top: 0.5rem;
+}
+.my-favorites li:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+}
+
+.favorite-movies {
+  grid-area: favorite-movies;
+}
+
+.favorite-songs {
+  grid-area: favorite-songs;
+}/*# sourceMappingURL=style.css.map */
